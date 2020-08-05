@@ -1,0 +1,96 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+    text-align: center;
+    margin-top: 150px;
+    background-color:burlywood
+}
+.calculatrice 
+{
+    width: 400px;
+    height: 200px;
+    border-radius : 20px;
+    margin: 0 auto;
+    
+}
+.touch
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap:1px;
+    
+}
+.display
+{
+    border: 1px solid #0000;
+    border-radius: 5% 5% 0% 0%;
+    height: 50px;
+background-color: black;
+}
+#display-calc
+{ 
+   padding-top: 30px;
+   padding-right: 10px;
+    background: #0000;
+    color: #fff; 
+    text-align: right;
+}
+.number
+{
+ height: 50px;
+ background-color: #fff;
+ font-size: 15px;
+ border-style: none;
+
+}
+#remove
+{ 
+   
+  grid-column-start: 4; 
+  grid-row:-4/6;
+  border-style: none;
+  font-size: 15px;
+  background-color:rgb(212, 207, 207);
+ 
+}
+.operator
+{ border-style: none;
+    font-size: 15px;
+    background-color:rgb(212, 207, 207);
+
+}
+#radius
+{
+    border-radius: 0% 0% 0% 15%;
+}
+.reset
+{
+    border-style: none;
+    font-size: 15px;
+    background-color:#fff;
+} 
+button 
+{
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+}
+button:active{
+    background: red;
+}
+.equal{
+    height: 50px;
+    grid-column:1/5; 
+    background-color: #fff;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 0% 0% 10% 0%;
+    background-color: rgb(243, 90, 43);
+}
